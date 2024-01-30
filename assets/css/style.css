@@ -1,10 +1,15 @@
 :root {
   --lato-font: "Lato", sans-serif;
+  --paragraph-color : #737373
 }
 
 body {
   /* width: 1463px; */
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -36,6 +41,7 @@ button {
   font-weight: 500;
   line-height: 21.6px;
 }
+
 
 header {
   display: flex;
@@ -115,6 +121,9 @@ h1 {
   font-size: 20px;
   line-height: 30px;
 }
+#readmore a{
+  color: #1E293B;
+}
 .span-arrow {
   padding: 5px;
 }
@@ -124,6 +133,9 @@ h1 {
   font-size: 18px;
   line-height: 30px;
   background-color: #3fc4ff;
+}
+#getcourses a{
+  color: #ffffff;
 }
 
 #count {
@@ -224,7 +236,9 @@ h1 {
   align-items: center;
   border-radius: 15px;
   /* box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08); */
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: 0px 4px 10px 0px #00000014;
+
 }
 
 .left-arrow {
@@ -244,6 +258,32 @@ h1 {
   width: 72px;
 }
 
+#best{
+  font-family: var(--lato-font);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  width: 140%;
+  margin-left: -16%;
+}
+
+#best_para{
+  font-family: var(--lato-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--paragraph-color);
+  margin-left: -16%;
+}
+
+#best_btn{
+  font-family: var(--lato-font);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: -16%;
+}
+
 .row2 {
   margin: 0px -16px;
   display: flex;
@@ -254,23 +294,38 @@ h1 {
 .col-3 {
   background: white;
   border-radius: 24px;
+  box-shadow: 0px 1px 10px 4px #1E293B0D;
 }
 
-.col-3 h4 {
+/* .col-3 h4 {
   font-size: 1.3rem;
-}
+} */
 
 .col-3 {
-  margin-bottom: 20px;
+  margin-bottom: 73px;
   margin-inline-start: auto;
   padding: 0 16px;
 }
 
+.text11{
+  font-family: var(--lato-font);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.col--3 p{
+  font-family: var(--lato-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--paragraph-color);
+}
+
 .col--3 {
-  padding: 2rem;
+  padding: 1rem;
 }
 .col--3 img{
-  /* background: black; */
+  margin: 12px 0px 15px 0px;
   padding: 15px;
   border-radius: 10px;
   height: 71px;
@@ -318,9 +373,118 @@ h1 {
   margin: 10px;
   /* width: 20rem;  */
   width: 410px;
+  border-radius: 15px;
 }
 .card img {
   padding: 12px;
+}
+
+.card span{
+  margin: 0 16px -4px 16px;
+  /* margin: 0 16px; */
+}
+
+#card_science{
+  color: #3FC4FF;
+  background-color: #3fc4ff29;
+  width: 93px;
+  height: 24px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#card_Maths{
+  color: #946FC6;
+  background-color:  #946fc61f;
+  width: 108px;
+  height: 24px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#card_English{
+  color: #798EE4;
+  background-color: #798ee433;
+  width: 93px;
+  height: 24px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card-title{
+  font-family: var(--lato-font);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1E293B;
+}
+
+.card-text{
+  font-family: var(--lato-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--paragraph-color);
+}
+
+.card-btn{
+  display: flex;
+  height: 30px;
+  width: 123px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: var(--lato-font);
+  background-color: #3fc4ff;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.icon_text{
+  margin-top: 5px;
+  font-family: var(--lato-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--paragraph-color);
+}
+#user{
+  background: #3FC4FF1A;
+  color: #3FC4FF;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+#star{
+  background: #946FC61A;
+  color: #946FC6;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+#dollar{
+  background: #946FC61A;
+  color: #946FC6;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
 }
 
 .img_teacher img {
@@ -403,7 +567,7 @@ h1 {
 }
 
 .person img{
-  margin: 61px 0 23px 0;
+  margin: 61px 0 23px 0 ;
 }
 
 .person_heading{
@@ -429,15 +593,36 @@ h1 {
   text-align: center;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .left-arr{
   position: absolute;
-  top: 673%;
+  top: 714%;
   left: 4%;
 }
 
 .right-arr{
   position: absolute;
-  top: 673%;
+  top: 714%;
   right: 4%;
 }
 
